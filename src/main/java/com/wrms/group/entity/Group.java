@@ -17,6 +17,8 @@ public class Group {
     private UUID id;
     @Column(nullable = false, length = 100)
     private String name;
+    @Column(nullable = true, length = 500)
+    private String description;
     @Column(nullable = false)
     private LocalDateTime createdAt;
 }
